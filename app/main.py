@@ -1,10 +1,10 @@
 import random
+from database.db_util import change_HighScore, get_HighScore, get_Signs, get_libraries, saveFrase
 from flask import Flask, render_template, Response, jsonify, request
 import cv2
 import numpy as np
 import mediapipe as mp
 from util import load_model_from_folder, landmarksOnScreen, buildLandmarkArray
-from db_util import get_libraries, get_Signs, get_HighScore, saveFrase, change_HighScore
 import time
 
 app = Flask(__name__)

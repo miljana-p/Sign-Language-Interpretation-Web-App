@@ -7,7 +7,7 @@ from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.callbacks import TensorBoard
-from db_util import get_libraries
+from database.db_util import get_libraries
 from util import buildLandmarkArray, landmarksOnScreen
 
 cap = cv2.VideoCapture(0)
